@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from "react"; 
+import "../styles/index.css"
+
 export default class Login extends Component {
     render() {
         return (
@@ -38,7 +40,7 @@ export default class Login extends Component {
               </button>
             </div>
             <p className="forgot-password text-right">
-              Forgot <a href="https://2021-portfolio-bice.vercel.app/">password?</a>
+              Forgot <a href="/">password?</a>
             </p>
           </form>
         )

@@ -9,7 +9,8 @@ function App() {
   <Router>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-          <div className="container">
+          <div className="container"> 
+          <img src="C:\Users\jlpan\quest\quest-engine-front-end\src\assets\img\QuestEngineLogo.png" alt="quest_engine-logo" />
             <Link className="navbar-brand" to={'/sign-in'}>
               Quest Engine
             </Link>
