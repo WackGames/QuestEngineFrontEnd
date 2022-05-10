@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import  { React, Component } from 'react'
+import "../styles/index.css"
+
+
 export default class SignUp extends Component {
   render() {
     return (
-      <div className="logo">
-        <img src="src\assets\img\QuestEngineLogo.png" alt="logo"/>
-      
+    
       <form>
         <h3>Sign Up</h3>
         <div className="mb-3">
@@ -44,7 +45,6 @@ export default class SignUp extends Component {
           Already registered <a href="/sign-in">sign in?</a>
         </p>
       </form>
-    </div>
     )
   }
 }
