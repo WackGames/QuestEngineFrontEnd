@@ -3,17 +3,17 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
-import "./styles/App.css"
-
-
+import logo from './assets/img/QuestEngineLogo.png'
 function App() {
   return (
   <Router>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-          <div className="container">
-          <img src="https://firebasestorage.googleapis.com/v0/b/questengine-da9e6.appspot.com/o/QuestEngineLogo.png?alt=media&token=c2e1095d-b7f5-4cd9-a5a8-ec359a724c1c" alt="logo" className="logo" />
-           
+          <div className="container"> 
+          <img src={logo} alt="quest_engine-logo" />
+            {/* <Link className="navbar-brand" to={'/sign-in'}>
+              Quest Engine
+            </Link> */}
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
