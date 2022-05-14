@@ -1,19 +1,20 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-
+import "../styles/LandingPage.css"
 
 function LandingPage() {
   return (
-    <div className="container">
+    <>
 
     <Navbar />
-  <div>
-    <h1 className="Welcome">
+    <div className="Instructions">
+  
+    <div className="Welcome">
     <h1>
     Hello
   </h1>
     Welcome to Quest Engine!
-  </h1>
+  </div>
     <button className="loginButton">
       Sign In To Your Account.
     </button>
@@ -21,7 +22,7 @@ function LandingPage() {
            Register New Account.
       </button>
     </div>
-  </div>
+  </>
     
   )
 }
