@@ -8,13 +8,13 @@
 
 
 .login:hover {
-    background-color: #f2f2f2;
+    background-color: #0000ff;
     color: black;
     border-radius: 15px
 }
 
 .signup:hover {
-    background-color: #f2f2f2;
+    background-color: #000dff;
     color: black;
     border-radius: 15px;
 }

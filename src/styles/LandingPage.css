@@ -6,9 +6,11 @@ h1 {
     margin-bottom: 2rem;    
 }
 .pageContainer {
+
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .landingButtons {

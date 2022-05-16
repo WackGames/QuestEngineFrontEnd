@@ -24,6 +24,20 @@ function LandingPage() {
       </button>
       </div>
     </div>
+    <section>
+      <p>
+        ipsum dolor sit amet, consectetur adipiscing elit.
+        ipsum dolor sit amet, consectetur adipiscing elit.
+        ipsum dolor sit amet, consectetur adipiscing elit.
+        ipsum dolor sit amet, consectetur adipiscing elit.
+        ipsum dolor sit amet, consectetur adipiscing elit.
+        ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </section>
+    <footer>
+      footer will go here
+    </footer>
+
   </div>
     
   )
