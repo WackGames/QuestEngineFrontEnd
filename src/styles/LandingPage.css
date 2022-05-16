@@ -1,17 +1,22 @@
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #fff;
+    color: rgb(3, 0, 0);
     text-align: center;
     margin-bottom: 2rem;    
 }
 .pageContainer {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
 }
+
+.welcome {
+    color: black;
+    width: 80%;
+}
+
 
 .landingButtons {
     display: flex;
@@ -25,6 +30,12 @@ h1 {
 }
 .signupButton {
     box-shadow: 3px 3px 3px black;
+}
+
+p {
+   margin: auto;
+   padding-top: 2%;
+   max-width: 80%;
 }
     
  
