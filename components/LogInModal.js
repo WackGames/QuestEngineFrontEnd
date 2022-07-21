@@ -24,10 +24,8 @@ function LogInModal() {
         <section>
           <p>
             ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit
-            amet, consectetur adipiscing elit. ipsum dolor sit amet, consectetur
-            adipiscing elit. ipsum dolor sit amet, consectetur adipiscing elit.
-            ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit
-            amet, consectetur adipiscing elit.
+            amet, consectetur adipiscing elit. ipsum dolor sit amet,
+            consectetur.
           </p>
         </section>
       </div>
