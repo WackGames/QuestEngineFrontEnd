@@ -11,13 +11,13 @@ function LogInModal() {
         <ul className="landingButtons">
           <li>
             <Link href="/Login">
-              <button className="loginButton">Sign In To Your Account.</button>
+              <button className="loginButton">Sign In To Your Account</button>
             </Link>
           </li>
 
           <li>
             <Link href="/Register">
-              <button className="signupButton">Register New Account.</button>
+              <button className="signupButton">Register New Account</button>
             </Link>
           </li>
         </ul>
