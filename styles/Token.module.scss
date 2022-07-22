@@ -1,0 +1,17 @@
+.err {
+    display: flex;
+    flex-direction: column;
+    p {
+        color: red;
+        margin: 5px 0
+    }
+}
+
+.success {
+    h2 {
+        margin: 5px 0;
+    }
+    .pass {
+        color: green;
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react'
- 
+import LoginForm from '../components/LoginForm'
+
 function Login() {
   return (
-    <form className="loginForm">
-    </form>
+    <LoginForm />
   )
 }
 
