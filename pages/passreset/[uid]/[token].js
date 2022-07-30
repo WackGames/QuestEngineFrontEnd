@@ -13,32 +13,9 @@ export default function PassReset() {
 
   const router = useRouter()
   function emailSubmit(event, val) {
-    fetch('http://example.com/songs')
-    .then(response => response.json())
-    .then(data => {
-      setData(data[0]["title"])
-      console.log(data)})
-    .catch(err => console.error(err));
-    
-    console.log(val)
+
   }
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/demo-quiz/', {
-      method: 'GET', // or 'PUT'
-      headers: {
-        'order': 'id',
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      setData(data["results"])
-      setLoading(false)
-
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
 }, [])
 
   return (
@@ -48,9 +25,6 @@ export default function PassReset() {
       <input onChange={(e) => setEmail(e.target.value)} type="email" />
       <button onClick={(e) => emailSubmit(e, router.query)}> Submit</button>
       </form>
-      {loading ? "" : data.map(val => {
-        return <img src={val["img_url"]} alt="Rick Astley" />
-      })}
     </div>
   )
 }
