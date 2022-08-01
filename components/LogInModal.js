@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function LogInModal() {
   return (
-    <div class="login-container">
+    <div className="login-container">
       <div className="Instructions">
         <div className="Welcome">
           <h1>Hello</h1>
