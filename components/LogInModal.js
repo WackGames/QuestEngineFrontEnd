@@ -12,7 +12,6 @@ function LogInModal() {
               <input type="text" placeholder="Username" />
               <br />
             </div>
-
             <div class="password-container">
               <i class="fa-solid fa-lock"></i>
               <input type="password" placeholder="Password" />

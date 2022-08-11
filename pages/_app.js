@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/Navbar.scss";
+import "../styles/loginmodal.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 function MyApp({ Component, pageProps }) {
