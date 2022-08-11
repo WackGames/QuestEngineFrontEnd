@@ -2,31 +2,26 @@ import Link from "next/link";
 
 function LogInModal() {
   return (
-    <div className="login-container">
-      <div className="Instructions">
-        <div className="Welcome">
-          <h1> Welcome to Quest Engine!</h1>
-        </div>
-        <ul className="landingButtons">
-          <li>
-            <Link href="/Login">
-              <button className="loginButton">Sign In To Your Account.</button>
-            </Link>
-          </li>
+    <div>
+      <div class="login-container">
+        <h1>Login to Your Account</h1>
+        <div class="username-container">
+          <form id="login" method="get">
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Username" />
+              <br />
+            </div>
 
-          <li>
-            <Link href="/Register">
-              <button className="signupButton">Register New Account.</button>
-            </Link>
-          </li>
-        </ul>
-        <section>
-          <p>
-            ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit
-            amet, consectetur adipiscing elit. ipsum dolor sit amet,
-            consectetur.
-          </p>
-        </section>
+            <div class="password-container">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+          </form>
+          <button type="button" class="btn btn-outline-primary">
+            LOGIN
+          </button>
+        </div>
       </div>
     </div>
   );
