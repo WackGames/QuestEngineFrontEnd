@@ -3,8 +3,8 @@ import Link from "next/link";
 function LogInModal() {
   return (
     <div>
-      <div class="login-container">
-        <h1>Login to Your Account</h1>
+      <div class="login-page">
+        <h3>Login</h3>
         <div class="username-container">
           <form id="login" method="get">
             <div>
@@ -20,6 +20,9 @@ function LogInModal() {
           <button type="button" class="btn btn-outline-primary">
             LOGIN
           </button>
+          <div class="signup-link">
+            Not a member? <a href="">Sign up now</a>
+          </div>
         </div>
       </div>
     </div>

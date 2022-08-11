@@ -1,0 +1,26 @@
+.login-page {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px 1px rgba(161, 161, 172, 0.58);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.username-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.password-container {
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
