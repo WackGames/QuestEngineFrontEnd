@@ -5,8 +5,7 @@ function LogInModal() {
     <div className="login-container">
       <div className="Instructions">
         <div className="Welcome">
-          <h1>Hello</h1>
-          <h2> Welcome to Quest Engine!</h2>
+          <h1> Welcome to Quest Engine!</h1>
         </div>
         <ul className="landingButtons">
           <li>
