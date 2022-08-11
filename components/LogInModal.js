@@ -5,7 +5,7 @@ function LogInModal() {
     <div>
       <div class="login-page">
         <h3>Login</h3>
-        <div class="username-container">
+        <div class="container">
           <form id="login" method="get">
             <div>
               <i class="fa-solid fa-user"></i>
