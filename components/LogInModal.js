@@ -4,7 +4,7 @@ function LogInModal() {
   return (
     <div class="main-container">
       <div class="login-page">
-        <h3 class="mt-4 mb-4">Log In to Your Quest Engine Account!</h3>
+        <h4 class="mt-4 mb-4">Log In to Your Quest Engine Account!</h4>
         <div class="container">
           <form id="login" method="get">
             <div class="username-login">
