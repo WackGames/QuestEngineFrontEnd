@@ -1,5 +1,10 @@
+$primary: blue;
+$secondary: #119990;
+$third: gold;
+$fourth: orangered;
+
 .login-page {
-  background-color: #22577e;
+  background-color: #{$secondary};
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(213, 213, 221, 0.58);
@@ -9,7 +14,7 @@
 }
 
 h4 {
-  color: #f6f2d4;
+  color: #{$third};
   margin-bottom: 40px;
 }
 
@@ -41,8 +46,8 @@ input {
 
 button.btn.btn-outline-primary {
   font-size: 18px;
-  color: #f6f2d4;
-  background-color: #22577e;
+  color: #{$third};
+  background-color: #{$secondary};
   margin-top: 15px;
   margin-bottom: 15px;
   border: 2px solid rgb(184, 174, 174);
@@ -52,9 +57,9 @@ button.btn.btn-outline-primary {
 
 button.btn.btn-outline-primary:hover {
   font-weight: bolder;
-  background-color: #28648f;
+  background-color: #15c0b4;
 }
 
 p {
-  color: #f6f2d4;
+  color: #{$third};
 }
