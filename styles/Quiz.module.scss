@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            color: $secondary;
+            font-size: 0.75rem;
+        }
+    }
+
+    .sect {
+        width: 100%;
+        background: $primary;
+        border-radius: 10px;
+    }
+    img {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 10px solid $primary;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 10px 0 5px 0;
+        color: $third;
+    }
+
+    p {
+        margin: 10px;
+        color: white;
+    }
+}

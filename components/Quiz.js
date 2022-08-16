@@ -1,14 +1,19 @@
 import React from 'react';
-import Link from "next/link";
-// import styles from '../styles/Navbar.module.scss'
+import styles from '../styles/Quiz.module.scss'
 
 
-export default function Quiz() {
+export default function Quiz({quiz}) {
     return (
-      <div>
-        <h1>Hello</h1>
-        {/* {people.map(person => console.log(person.id))} */}
-        {/* <h2>{quizzes["id"]}</h2> */}
+      <div className={styles.container}>
+        <img src={quiz.img_url} alt={quiz.name} />
+        <section className={styles.sect}>
+        <h2>{quiz.name}</h2>
+        <section>
+          <h3>{quiz.category}</h3>
+          <h3>{quiz.subcategory}</h3>
+        </section>
+        <p>{quiz.description}</p>
+        </section>
       </div>
     )
   }
