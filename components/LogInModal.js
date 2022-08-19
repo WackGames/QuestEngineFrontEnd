@@ -2,11 +2,29 @@ import Link from "next/link";
 import { useState } from "react";
 
 function LogInModal() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const submitLogin = (e) => {
-    e.preventDefault();
-    console.log(e);
+  const [loginUsername, setUsername] = useState("");
+  const [loginPassword, setPassword] = useState("");
+  const [errorMsg, setError] = useState("");
+  const submitLogin = async (e) => {
+    //e.preventDefault();
+    const res = await fetch(
+      "https://questengine.herokuapp.com/authen/jwt/create/",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: loginUsername,
+          password: loginPassword,
+        }),
+      }
+    );
+    const content = await res.json();
+    setError(content.detail);
+    console.log(loginUsername, loginPassword);
+    console.log(content);
   };
 
   return (
@@ -17,11 +35,21 @@ function LogInModal() {
           <form id="login" method="post">
             <div className="username-login">
               <i className="fa-solid fa-user"></i>
-              <input type="text" placeholder="Username" value={username} />
+              <input
+                type="text"
+                placeholder="Username"
+                value={loginUsername}
+                onChange={(e) => setUsername(e.target.value)}
+              />
             </div>
             <div className="password-login">
               <i className="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" value={password} />
+              <input
+                type="password"
+                placeholder="Password"
+                value={loginPassword}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
           </form>
 
@@ -32,7 +60,7 @@ function LogInModal() {
           >
             LOGIN
           </button>
-
+          <p>{errorMsg}</p>
           <div className="signup-link">
             <p>
               Not a member? <a href="">Sign up now</a>
