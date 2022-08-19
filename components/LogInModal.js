@@ -5,6 +5,8 @@ function LogInModal() {
   const [loginUsername, setUsername] = useState("");
   const [loginPassword, setPassword] = useState("");
   const [errorMsg, setError] = useState("");
+  const [emptyEmail, setEmptyEmail] = useState("");
+  const [emptyPassword, setEmptyPassword] = useState("");
   const submitLogin = async (e) => {
     //e.preventDefault();
     const res = await fetch(
@@ -23,6 +25,16 @@ function LogInModal() {
     );
     const content = await res.json();
     setError(content.detail);
+    try {
+      setEmptyEmail(content.email[0]);
+    } catch (err) {
+      setEmptyEmail("");
+    }
+    try {
+      setEmptyPassword(content.password[0]);
+    } catch (err) {
+      setEmptyPassword("");
+    }
     console.log(loginUsername, loginPassword);
     console.log(content);
   };
@@ -41,6 +53,7 @@ function LogInModal() {
                 value={loginUsername}
                 onChange={(e) => setUsername(e.target.value)}
               />
+              <p>{emptyEmail}</p>
             </div>
             <div className="password-login">
               <i className="fa-solid fa-lock"></i>
@@ -50,6 +63,7 @@ function LogInModal() {
                 value={loginPassword}
                 onChange={(e) => setPassword(e.target.value)}
               />
+              <p>{emptyPassword}</p>
             </div>
           </form>
 
