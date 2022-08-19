@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailData from "pages/EmailData";
 
 function LogInModal() {
   return (
@@ -10,6 +11,7 @@ function LogInModal() {
             <div className="username-login">
               <i className="fa-solid fa-user"></i>
               <input type="text" placeholder="Username" />
+              <EmailData />
             </div>
             <div className="password-login">
               <i className="fa-solid fa-lock"></i>
@@ -17,7 +19,7 @@ function LogInModal() {
             </div>
           </form>
 
-          <button type="button" className="btn btn-outline-primary">
+          <button type="submit" className="btn btn-outline-primary">
             LOGIN
           </button>
           <div className="signup-link">
