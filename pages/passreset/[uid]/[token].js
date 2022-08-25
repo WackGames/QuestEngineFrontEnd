@@ -11,9 +11,11 @@ export default function PassReset() {
   const [data, setData] = useState()
   const [loading, setLoading] = useState(true)
 
-  const router = useRouter()
-  function emailSubmit(event, val) {
-
+  const router = useRouter();
+  
+  function emailSubmit(e) {
+      e.preventDefault();
+      console.log("HELLO THERE!")
   }
   useEffect(() => {
 }, [])
@@ -23,7 +25,7 @@ export default function PassReset() {
       <h1>Password Reset</h1>
       <form>
       <input onChange={(e) => setEmail(e.target.value)} type="email" />
-      <button onClick={(e) => emailSubmit(e, router.query)}> Submit</button>
+      <button onClick={(e) => emailSubmit(e)}> Submit</button>
       </form>
     </div>
   )
