@@ -77,7 +77,7 @@ function LogInModal() {
           <p>{errorMsg}</p>
           <div className="signup-link">
             <p>
-              Not a member? <a href="/register">Sign up now</a>
+              Not a member? <Link href="/register"><a>Sign up now</a></Link>
             </p>
           </div>
         </div>
