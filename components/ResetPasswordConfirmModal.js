@@ -16,7 +16,7 @@ function ResetPasswordConfirmModal() {
     e.preventDefault();
     let content;
     const res = await fetch(
-        "https://questengine.onrender.com/authen/users/reset_password_confirm/",
+        "https://questengine.herokuapp.com/authen/users/reset_password_confirm/",
         {
           method: "POST",
           headers: {
