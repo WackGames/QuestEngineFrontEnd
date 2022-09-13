@@ -10,7 +10,7 @@ function LogInModal() {
   const submitLogin = async (e) => {
     //e.preventDefault();
     const res = await fetch(
-      "https://questengine.onrender.com/authen/jwt/create/",
+      "https://questengine.herokuapp.com/authen/jwt/create/",
       {
         method: "POST",
         headers: {
