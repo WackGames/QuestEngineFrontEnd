@@ -5,7 +5,15 @@ import Quiz from '../components/Quiz'
 import Quizzes from '../components/Quizzes'
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://questengine.herokuapp.com/demo-quiz/");
+  const res = await fetch("https://questengine.onrender.com/demo-quiz/",
+  {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    }
+  }
+  );
   const data = await res.json();
 
   return {
